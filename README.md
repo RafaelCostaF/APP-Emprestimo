@@ -8,9 +8,9 @@ Instruções de uso :
 
 <h3>Input example</h3>
  
- ![Image containing examples of the inputs]('./img/Capture-inputs.png')
+ ![Image containing examples of the inputs](./img/Capture-inputs.png)
 
 
 <h3>Output example</h3>
  
- ![Image containing examples of the output]('./img/Capture-results.png')
+ ![Image containing examples of the output](./img/Capture-results.png)
