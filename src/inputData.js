@@ -1,12 +1,12 @@
 import React from 'react';
 import { Text,SafeAreaView, TextInput, StyleSheet, Button} from 'react-native';
 
-const InputData = ({getInputs}) => {
-    const [name, onChangeName] = React.useState(null);
-    const [cpf, onChangeCpf] = React.useState(null);
-    const [age, onChangeAge] = React.useState(null);
-    const [uf, onChangeUf] = React.useState(null);
-    const [rendaMensal, onChangeRendaMensal] = React.useState(null);
+const InputData = ({getInputs,modalFunction}) => {
+    const [name, onChangeName] = React.useState("");
+    const [cpf, onChangeCpf] = React.useState("");
+    const [age, onChangeAge] = React.useState("");
+    const [uf, onChangeUf] = React.useState("");
+    const [rendaMensal, onChangeRendaMensal] = React.useState("");
 
     const childToParent = () => { 
         getInputs({
@@ -18,6 +18,7 @@ const InputData = ({getInputs}) => {
             "renda_mensal":parseInt(rendaMensal)
             }
         });
+        modalFunction(true);
     }
 
     return (
